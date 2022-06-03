@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+* {
+  font-family: Poppins;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.star {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-snap-stop: always;
+}
+section {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  scroll-snap-align: start;
+}
+.shape {
+  height: 80%;
+  width: 30%;
+  background-color: #a3cb38;
+  position: absolute;
+  right: 10%;
+  z-index: -1;
+}
+.home nav a {
+  text-decoration: none;
+  margin: 3em;
+  color: black;
+}
+.home nav {
+  height: fit-content;
+  padding: 4em 0 5em 10em;
+}
+.home .container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 0 2rem;
+  align-items: center;
+}
+.home .container .txt {
+  width: 30%;
+  padding-left: 5rem;
+}
+.home .container .txt h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.home .container .txt button {
+  background-color: #a3cb38;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+}
+
+.hustle-container {
+  display: flex;
+  padding: 3em 0;
+  position: relative;
+}
+.hustle-container .img {
+  position: relative;
+  height: max-content;
+  width: 45%;
+  margin-right: 2em;
+}
+.hustle-container .img h1 {
+  font-size: 6rem;
+  width: min-content;
+  position: absolute;
+  top: 0;
+  margin: 0%;
+  padding: 0%;
+  line-height: 1em;
+  left: 1em;
+}
+.hustle-container .edu {
+  width: 35%;
+}
+.hustle-container .edu h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0.5em 0;
+  color: #a3cb38;
+}
+.hustle-container .edu b {
+  font-size: 1.2rem;
+}
+.hustle-container .edu p {
+  margin-top: 0.5em;
+}
+.hustle .work-header {
+  text-align: center;
+  justify-content: center;
+}
+.hustle .work-header h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 4rem;
+}
+.myWork {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+.workCard {
+  position: relative;
+  width: 50%;
+}
+
+.workCard .imgShape {
+  width: 2em;
+  background-color: #a3cb38;
+  height: 3em;
+  position: absolute;
+  top: -1em;
+  left: 1em;
+}
+.workCard h5 {
+  font-size: 1.2rem;
+  margin: 0%;
+}
+.workCard p {
+  margin: 0%;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+.workCard a {
+  color: #a3cb38;
+  text-decoration: none;
+  font-weight: bolder;
+}
+.proudOf {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.proudOf .heading {
+  background-color: #a3cb38;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  width: fit-content;
+}
+.proudOf .heading h1 {
+  font-size: 6rem;
+  width: min-content;
+  margin: 4rem;
+  line-height: 1em;
+  color: white;
+}
+.proudOf .achiv {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 3em;
+  margin-right: 10em;
+  row-gap: 3em;
+}
+.proudOf .achiv p {
+  width: 70%;
+  background-image: linear-gradient(#a3cb38, #a3cb38);
+  background-repeat: no-repeat;
+  background-size: 2em 5px, calc(100% - 4px) 100%;
+  background-position: top left;
+  padding-top: 1em;
+}
+.mySideHustle {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 3em;
+  align-items: center;
+  overflow-y: hidden;
+  scroll-snap-align: center;
+}
+.mySideHustle .head h1 {
+  color: #a3cb38;
+  width: min-content;
+  line-height: 1em;
+  font-size: 6rem;
+}
+.mySideHustle .imgGallery {
+  display: grid;
+  grid-template-areas: "guitar friends" "guitar badminton" "painting reading";
+  height: 100%;
+}
+.mySideHustle img {
+  object-fit: scale-down;
+}
+.mySideHustle .image1 {
+  grid-area: guitar;
+  align-self: flex-end;
+}
+.mySideHustle .image2 {
+  grid-area: painting;
+}
+.mySideHustle .image3 {
+  grid-area: friends;
+}
+.mySideHustle .image4 {
+  grid-area: badminton;
+}
+.mySideHustle .image5 {
+  grid-area: reading;
+}
+footer {
+  height: 35%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding-right: 2em;
+  margin-top: 5em;
+  scroll-snap-align: end;
+}
+footer .sec1 {
+  background-color: #a3cb38;
+  width: 35%;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3em;
+  box-sizing: border-box;
+}
+footer h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+footer p {
+  align-self: flex-end;
+}
+footer a {
+  color: white;
+}
+footer .sec1 .imgs img {
+  height: 30px;
+  margin: 5px;
+}
